@@ -1,0 +1,23 @@
+/*
+   GTakPM
+   (c) Benjamin Stein 1994
+   All Rights Reserved
+   Stringtable.rc
+*/
+
+
+
+STRINGTABLE
+{
+ APP_TITLE "GTakPM 1.0"
+ ERROR_RESOURCELIB_NOT_FOUND "Can't load resource library GTAKPM.RSL."
+ ERROR_FRAME_NOT_CREATED "Frame window: creation failed."
+ ERROR_STATLINE_CREATION "Statusline: creation failed."
+ ERROR_TOOLBAR_CREATION "Toolbar: creation failed."
+ SURE_TO_EXIT "Hmm - not a nice way to close a program! Do you really want to quit?"
+ DENY_TASK_KILL "Hmm - not a nice way to close a program! Request denied."
+ ERROR_LOAD_MENU "Can't load a menu resource from resource library."
+ ERROR_LISTBOX_CREATION "Listbox: creation failed."
+}
+
+/* end of source */

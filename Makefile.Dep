@@ -1,0 +1,39 @@
+COMMONDEP = .\INCLUDE\GTakPM.h \
+.\INCLUDE\Resources.h \
+.\INCLUDE\Messages.h \
+.\INCLUDE\HelpPanels.h \
+.\INCLUDE\Stringtable.h \
+.\INCLUDE\GTPMException.hpp \
+.\INCLUDE\GTPMApp.hpp \
+.\INCLUDE\GTPMWin.hpp \
+.\INCLUDE\Tape.hpp \
+Makefile
+
+.\RSL.obj: .\RSL.rc
+.\RSL.obj: .\RSL.c
+
+.\GTakPM.res: .\GTakPM.rc \
+    .\Stringtable.rc \
+    .\ICON\GTAKPM.ICO \
+    .\BITMAP\STRUCT.BMP \
+    .\BITMAP\PROCEDURES.BMP \
+    .\BITMAP\TAPE.BMP \
+    .\BITMAP\BACKUP.BMP \
+    .\BITMAP\RESTORE.BMP \
+    .\BITMAP\COMPARE.BMP \
+    .\BITMAP\INFO.BMP \
+    .\BITMAP\QUIT.BMP \
+    .\BITMAP\SETTINGS.BMP \
+    $(COMMONDEP)
+
+.\GTPMException.obj: .\GTPMException.cpp $(COMMONDEP)
+.\GTPMWin.obj: .\GTPMWin.cpp $(COMMONDEP)
+.\GTPMWinCommand.obj: .\GTPMWinCommand.cpp $(COMMONDEP)
+.\GTPMWinControl.obj: .\GTPMWinControl.cpp $(COMMONDEP)
+.\GTPMApp.obj: .\GTPMApp.cpp $(COMMONDEP)
+.\GTPMMain.obj: .\GTPMMain.cpp $(COMMONDEP)
+.\FilesCnr.obj: .\FilesCnr.cpp $(COMMONDEP)
+.\DrivesCnr.obj: .\DrivesCnr.cpp $(COMMONDEP)
+.\Tape.obj: .\Tape.cpp $(COMMONDEP)
+.\Backup.obj: .\Backup.cpp $(COMMONDEP)
+.\Restore.obj: .\Restore.cpp $(COMMONDEP)

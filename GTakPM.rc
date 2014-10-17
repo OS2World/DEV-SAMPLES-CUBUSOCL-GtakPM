@@ -1,0 +1,50 @@
+/*
+   GTakPM
+   (c) Benjamin Stein 1994
+   All Rights Reserved
+   GTakPM.rc
+*/
+
+#include <os2.h>
+#include <GTakPM.h>
+#include <Resources.h>
+#include <Messages.h>
+#include <HelpPanels.h>
+#include <Stringtable.h>
+
+
+ICON  GTPM_ICO                  .\ICON\GTAKPM.ICO
+ICON  MONITOR_ICO               .\ICON\MONITOR.ICO
+
+
+BITMAP CMD_RESCAN               .\BITMAP\STRUCT.BMP
+BITMAP CMD_PROCEDURES           .\BITMAP\PROCEDURES.BMP
+BITMAP CMD_TAPE                 .\BITMAP\TAPE.BMP
+BITMAP CMD_BACKUP               .\BITMAP\BACKUP.BMP
+BITMAP CMD_RESTORE              .\BITMAP\RESTORE.BMP
+BITMAP CMD_COMPARE              .\BITMAP\COMPARE.BMP
+BITMAP CMD_INFO                 .\BITMAP\INFO.BMP
+BITMAP CMD_QUIT                 .\BITMAP\QUIT.BMP
+BITMAP CMD_SETTINGS             .\BITMAP\SETTINGS.BMP
+BITMAP TAPEBAR_LOAD             .\BITMAP\LOAD.BMP
+BITMAP TAPEBAR_UNLOAD           .\BITMAP\UNLOAD.BMP
+BITMAP TAPEBAR_REWIND           .\BITMAP\REWIND.BMP
+BITMAP TAPEBAR_PARTITIONS       .\BITMAP\PART.BMP
+BITMAP TAPEBAR_FORMAT           .\BITMAP\FORMAT.BMP
+BITMAP TAPEBAR_ERASE            .\BITMAP\ERASE.BMP
+BITMAP TAPEBAR_ERASEQ           .\BITMAP\ERASEQ.BMP
+BITMAP TAPEBAR_LOCK             .\BITMAP\LOCK.BMP
+BITMAP TAPEBAR_UNLOCK           .\BITMAP\UNLOCK.BMP
+BITMAP TAPEBAR_STOP_ASAP        .\BITMAP\STOP.BMP
+BITMAP CMD_MONITOR              .\BITMAP\MONITOR.BMP
+
+
+
+/* menus */
+rcinclude Menus.rc
+
+/* stringtable */
+rcinclude Stringtable.rc
+
+
+/* end of source */

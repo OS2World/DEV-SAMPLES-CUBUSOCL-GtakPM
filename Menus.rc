@@ -1,0 +1,35 @@
+/*
+   GTakPM
+   (c) Benjamin Stein 1994
+   All Rights Reserved
+   Menus.rc
+*/
+
+
+MENU GTPM_MENU
+{
+
+ SUBMENU "~Procedures", GTPM_MENU_PROCEDURES, MIS_TEXT
+ {
+ }
+
+ SUBMENU "~Volumes", GTPM_MENU_VOLUMES, MIS_TEXT
+ {
+ }
+
+ SUBMENU "~Tools", GTPM_MENU_TOOLS, MIS_TEXT
+ {
+ }
+
+ SUBMENU "~Help", GTPM_MENU_HELP, MIS_BUTTONSEPARATOR
+ {
+  MENUITEM "~Index", GTPM_MENU_INDEX, MIS_TEXT
+  MENUITEM "~Contents", GTPM_MENU_CONTENTS, MIS_TEXT
+  MENUITEM SEPARATOR
+  MENUITEM "~About", GTPM_MENU_ABOUT, MIS_TEXT
+ }
+ 
+}
+
+
+/* end of source */
